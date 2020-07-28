@@ -1,0 +1,30 @@
+﻿@model DiscusFish.Models.Discus
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2 style="text-align:center">Delete</h2>
+
+
+<h3> Are you sure, you want to delete the following record? </h3>
+<dl class="dl-horizontal">
+    <dt> @Html.DisplayNameFor(m => m.name)</dt>
+    <dd> @Html.DisplayFor(m => m.name) </dd>
+
+    <dt> @Html.DisplayNameFor(m => m.image)</dt>
+    <dd> <img src="~/Images/@Html.DisplayFor(m => m.image)" width="250" /> </dd>
+
+    <dt> @Html.DisplayNameFor(m => m.video)</dt>
+    <dd>  <iframe src="https://www.youtube.com/embed/@Html.DisplayFor(m => m.video)" width="250"></iframe></dd>
+
+
+</dl>
+
+@using (Html.BeginForm())
+{
+    <input type="submit" value="Cofirm Delete" />
+}
+
+<button class="btn btn-primary"> @Html.ActionLink("Back to List", "Database")</button>
+

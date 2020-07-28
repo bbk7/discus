@@ -1,0 +1,79 @@
+﻿@model IEnumerable<DiscusFish.Models.Discus>
+
+@{
+    ViewBag.Title = "Database";
+}
+
+<h2>Discus Database</h2>
+
+@Html.ActionLink("Add new Discus", "Create", "", new { @class = " btn btn-success" })
+<br />
+<br />
+
+@using (Html.BeginForm())
+{
+    <p>
+        Title: @Html.TextBox("searchString")
+        Name: @Html.DropDownList("discusName", "All")
+        <input type="submit" value="Search" />
+
+
+    </p>
+}
+
+<table class="table table-bordered" id="myTable">
+
+    <thead>
+        <tr>
+
+            <th> Name </th>
+            <th> Image </th>
+            <th> Video </th>
+            <th> </th>
+
+        </tr>
+
+    </thead>
+
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(m => item.name)
+                </td>
+                <td>
+                    <img src="~/Images/@Html.DisplayFor(m => item.image)" width="250" height="250" />
+                </td>
+                <td>
+                    <iframe src="https://www.youtube.com/embed/@Html.DisplayFor(m => item.video)" width="250" height="250"></iframe>
+                </td>
+
+                <td>
+                   
+                    @Html.ActionLink("Detail ", "Detail", new { id = item.Id }, new { @class = "btn btn-primary" })
+                    @Html.ActionLink("Edit ", "Edit", new { id = item.Id }, new { @class = "btn btn-warning" })
+                    @Html.ActionLink("Delete ", "Delete", new { id = item.Id }, new { @class = "btn btn-danger" })
+
+
+                </td>
+            </tr>
+        }
+    </tbody>
+
+</table>
+
+
+<style>
+    .table {
+        text-align: center;
+    }
+</style>
+
+<script>
+    $(document).ready(function () {
+        $('#myTable').DataTable();
+    });
+</script>
+
+

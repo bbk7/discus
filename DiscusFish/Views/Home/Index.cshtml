@@ -1,0 +1,463 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+
+    <div id="themeSlider" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#themeSlider" data-slide-to="0" class="active"></li>
+            <li data-target="#themeSlider" data-slide-to="1"></li>
+            <li data-target="#themeSlider" data-slide-to="2"></li>
+            <li data-target="#themeSlider" data-slide-to="3"></li>
+
+        </ol>
+
+        <div class="carousel-inner">
+            <div class="item active">
+                <div class="imgOverlay"></div>
+                <img  class=" img-responsive" style="height:320px;" src="../Images/d7.jpg" alt="First slide">
+                <div class="carousel-caption">
+
+                    <h3> @Html.ActionLink("Strains", "Strains", "Home") </h3>
+                    <p>View all the different types of strains of Discus.</p>
+
+
+                </div>
+            </div>
+            <div class="item">
+                <div class="imgOverlay"></div>
+                <img class=" img-responsive" style="height:320px;" src="../Images/d2.jpg" alt="Second slide">
+                <div class="carousel-caption">
+                    <h3> @Html.ActionLink("Database", "Database", "Home") </h3>
+                    <p>Database of the Discus and CRUD Operation.</p>
+
+
+                </div>
+            </div>
+            <div class="item">
+                <div class="imgOverlay"></div>
+                <img class=" img-responsive" style="height:320px;" src="../Images/d1.jpg" alt="Third slide">
+                <div class="carousel-caption">
+                    <h3> @Html.ActionLink("Gallery", "Gallery", "Home") </h3>
+                    <p>View the picture of Discus and beautiful Discus Tanks.</p>
+
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="imgOverlay"></div>
+                <img class=" img-responsive" style="height:320px;" src="../Images/d8.jpg" alt="Fourth slide">
+                <div class="carousel-caption">
+                    <h3> @Html.ActionLink("About", "About", "Home") </h3>
+                    <p>View the info about this website.</p>
+
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+
+</div>
+
+
+<div id="main">
+
+
+    <div class="information">
+        <div class="pic">
+            <img  class=" img-responsive" style="height:200px; width:100%;" src="../Images/d3.jpg" />
+        </div>
+
+        <div class="text">
+
+            <h2 style="text-align:center;">About Discus</h2>
+
+
+
+
+            <p>
+                Discus fish are one of the most beautiful freshwater fish in the hobby,
+                known for their spectacular colours and large, circular shape
+                . Discus fish are named after their disc shape appearance and are the member of Cichlids family.
+                Discus are found in floodplain lakes and flooded forests of the lowland Amazon River basin
+                due to their distinctive shape, behaviour, and bright colours and patterns;
+                Discus is one of the most popular freshwater aquarium fish in the hobby.
+
+
+            </p>
+
+
+            <div class="text-center">
+                <button class="btn, btn-sm" data-target="#aboutDiscus" data-toggle="modal" style="margin: 0 auto;">Read More...</button>
+            </div>
+          
+
+            <div class="modal fade" data-keyboard="false" data-backdrop="static" id="aboutDiscus" tabindex="-1">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button class="close" data-dismiss="modal">&times;</button>
+                            <h2 class="modal-title" style="text-align:center;">About Discus</h2>
+                        </div>
+                        <div class="modal-body">
+                            <p>
+
+                                Discus fish are one of the most beautiful freshwater fish in the hobby,
+                                known for their spectacular colours and large, circular shape
+                                . Discus fish are named after their disc shape appearance and are the member of Cichlids family.
+                                Discus are found in floodplain lakes and flooded forests of the lowland Amazon River basin
+                                due to their distinctive shape, behaviour, and bright colours and patterns;
+                                Discus is one of the most popular freshwater aquarium fish in the hobby.
+
+                                <br />
+                                <br />
+
+                                They can grow up to 8 inches in diameter and live up to 10-15 years.
+                                There are many colour variations and patterns of discus through selected breeding.
+                                Wild caught discus can be challenging to keep, due to their specialized water chemistry and dietary needs,
+                                however, most discus sold today are captive bred and are much easier to keep.
+                                That said, they are not for beginners for a variety of reasons.
+
+                                <br />
+                                <br />
+
+                                Discus fish are very peaceful schooling fish and prefer to be in a group.
+                                Although like all Cichlids, there can be some competition in shoal and a pecking order will be established.
+                                Most of the aggression arise only during establishment of hierarchy between them and during breeding. They tend to stay in the mid-levels but will rise to the top and dip to the bottom to forage.
+
+                            </p>
+
+                        </div>
+                        <div class="modal-footer">
+
+
+                            <button class="btn" data-dismiss="modal">Close</button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+
+        </div>
+
+    </div>
+
+
+
+
+
+    <div class="information">
+        <div class="pic">
+            <img class=" img-responsive" style="height:200px; width:100%;" src="../Images/keep1.jpg" />
+
+        </div>
+
+        <div class="text">
+
+            <h2 style="text-align:center;">Keeping Discus</h2>
+
+
+
+            <p>
+                Discus is considered a difficult fish to keep.
+                It might be true in the past due to fish requiring certain condition such as PH and GH however
+                that is not the case anymore as these fish are being breed at local water and
+                have adapted to live in our local water condition.
+                It is not recommended as beginner fish but if you know the basic of fish keeping such as water changes, feeding appropriately etc than
+                it is no different than keeping any other fish.
+
+            </p>
+
+            <div class="text-center">
+                <button class="btn, btn-sm" data-target="#keepingDiscus" data-toggle="modal">Read More...</button>
+                </div>
+
+                <div class="modal fade" data-keyboard="false" data-backdrop="static" id="keepingDiscus" tabindex="-1">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button class="close" data-dismiss="modal">&times;</button>
+                                <h2 class="modal-title" style="text-align:center;">Keeping Discus</h2>
+                            </div>
+                            <div class="modal-body">
+                                <p>
+                                    Discus is considered a difficult fish to keep.
+                                    It might be true in the past due to fish requiring certain condition such as PH and GH however
+                                    that is not the case anymore as these fish are being breed at local water and
+                                    have adapted to live in our local water condition.
+                                    It is not recommended as beginner fish but if you know the basic of fish keeping such as water changes, feeding appropriately etc than
+                                    it is no different than keeping any other fish.
+                                </p>
+
+                                <br />
+
+                                <h5><b>Some of the key points of keeping Discus are</b></h5>
+                                <p>
+                                    -	Keep them in clean water (same as all other fish)
+                                    <br />
+                                    -	Keep them in group of 6 or more.
+                                    <br />
+                                    -	Keep them in hot temperature (30 degree Celsius).
+                                    <br />
+                                    -	Do not mix the Discus from different source (shops and breeder).
+                                    <br />
+                                    -	Do not keep them with aggressive fish or fast-moving fish.
+                                </p>
+                                <br />
+
+                                <h4><b> What Size Tank Do You Need for Discus?</b></h4>
+                                <p>
+                                    Generally, it is recommended 25-30 per discus in the tank.
+                                    As you need to keep them in group 6 or more Its is recommended to keep them in tank of 180 litres or more.
+                                    Bigger is always better as if you try to overstock your aquarium, you’re forced to do a lot of water changes.
+                                    As these fish get big, usually 5 to 7 inches in diameter if you’re doing things right.
+                                    Also, by heating up the tank, their metabolism goes up, you must feed them more, and then more waste is created.
+                                    (That’s why people recommend doing all those frequent water changes.
+                                </p>
+
+                                <br />
+
+                                <h4> <b> What Is the Ideal Temperature for Discus Fish?</b></h4>
+                                <p>
+                                    The easiest trick for keeping happy discus is to raise the water temperature.
+                                    The recommended temperature is 30 degree Celsius.
+                                    The reason is because the discus is breaded and kept at these temperatures,
+                                    and when we try to force them to cool down, it becomes a source of discomfort.
+                                    When the heat is kept high, your discus become more active, their metabolisms run well,
+                                    they grow faster, and they show off better colours.
+                                </p>
+
+                                <br />
+                                <h4> <b>What Fish Can Be Kept with Discus?</b></h4>
+                                <p>
+
+                                    Tank mates must meet two criteria: they should be able to live in high temperatures and they cannot outcompete the discus for food.
+                                    In general, discus are slow feeders, so if you put them with speedy, bullet-shaped fish (like barbs or even huge schools of tetras),
+                                    the discus will tend to lose that race.
+                                    <br />
+                                    Some of the best tank mates are:
+                                    <br />
+
+                                    - Cardinal Tetra
+                                    <br />
+                                    - Lemon Tetra
+                                    <br />
+                                    - Black Neon Tetra
+                                    <br />
+                                    - Bleeding Heart Tetra
+                                    <br />
+                                    - Bentosi White Fin Tetra
+                                    <br />
+                                    - Sterbai Corydora
+                                    <br />
+                                    - Bristlenose Pleco
+                                    <br />
+                                    - Tiger Pleco
+                                    <br />
+                                    - Rams
+
+                                </p>
+                                <br />
+
+                                <h4> <b>What Is the Best Food for Discus Fish?</b></h4>
+                                <p>
+                                    Discus need meaty food as they require lots of protein in their diet.
+                                    People usually feed them beef heart mix as it is used by most breeder and shop, so they are used to it.
+                                    They can also be fed normal pellets however some Discus might take to get used to pellet food as they grew up on beef heart.
+                                    <br />
+                                    Most people feed them foods that are way too big, not realizing that discus mouths are quite small.
+                                    Therefore, if you see them eating the food, spitting it out, and then mouthing it again,
+                                    you may have a problem with the size of the food.
+                                </p>
+                                <br />
+
+                                <h4> <b>Why Are Discus Fish So Expensive?</b></h4>
+                                <p>
+                                    Discus need clean and stable water for breeding and raising fry.
+                                    It’s very time and labour-intensive work,
+                                    especially since discus take longer to reach full adult size compared to other cheaper fish like guppies.
+                                    You can buy discus from trusted local breeders,
+                                    fish stores, or even online, but if you’ve never kept discus before,
+                                    keep away from the price extremes (normally for Show Quality Discus).
+                                    In other words, don’t buy the cheapest one from unknown source they might have quality issues.
+                                    Just remember to purchase a group of them from the same source and at same size to minimize bullying.
+                                </p>
+                                <br />
+
+                                <h4> <b>Discus from different sources?</b></h4>
+                                <p>
+                                    This is one of the main reasons for people lose discus fish when they keep them first time giving them label of hard fish to keep.
+                                    <br />
+
+                                    The so called "Discus Plague" is 100% avoidable - don't mix Discus from different sources.
+
+                                    <br />
+
+                                    Fish from different hatcheries or different sources may have different strains of bacteria and
+                                    it really is good advice not to keep them together, or "mix" them.
+                                    Therefore, it is in your interest and more importantly the Discus's that before adding Discus to your aquarium
+                                    you decide to keep Wild Discus, Asian captive bred Discus or Stendker Discus.
+                                    Then, stick to your chosen supplier.
+                                    <br />
+                                    <br />The worst part of this Plague is that its effect is slow which means discus start dyeing after few weeks or months,
+                                    while people having no idea why their fish is dying.
+
+
+
+                                </p>
+                                <br />
+
+                                <h4> <b> How Do You Keep Discus Fish Happy?</b></h4>
+                                <p>
+                                    The main takeaway from this care guide is to reduce stress.
+                                    Raise the heat, keep the water clean and stable, and feed them correctly.
+                                    Don’t let kids tap on the glass and limit the amount of traffic near their tank.
+                                    Also, don’t put their aquarium right next to the TV with lots of loud noises and flashing lights.
+                                    Anything you can do to help these shy creatures feel safe will go a long way in enhancing their health and quality of life.
+                                    Also, sometimes you might need to rehome some rowdy male Discus who is causing havoc in the tank.
+
+                                    <br />
+                                    <br />
+
+                                    Finally, don’t forget to reduce your own stress!
+                                    A lot of beginner discus owners spend too much time worrying that they’ll accidentally harm their discus,
+                                    instead of relaxing and appreciating their majestic beauty.
+                                    With these simple guidelines, you’re on your way to having a successful, enjoyable discus tank for many years to come.
+                                </p>
+                                <br />
+
+
+
+
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn" data-dismiss="modal">Close</button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+
+
+
+
+    <div class="information">
+        <div class="pic">
+            <img class=" img-responsive" style="height:200px; width:100%;" src="../Images/wd.jpg" />
+        </div>
+
+        <div class="text">
+            <h2 style="text-align:center;">Wild Discus</h2>
+            <p>
+                The beautifully coloured varieties of Discus that we have grown to love are a result of highly selective breeding.
+                Wild Discus Fish however are typically brown with turquoise stripes on their fins,
+                amber coloured eyes dark vertical bars across their bodies.
+                There are 4 variations of the wild Discus fish that are the forefathers
+                of all tank bred species which have been selectively bred to enhance their colours,
+                shape and temperament usually with vivid red eyes and all manner of pattens.
+            </p>
+
+            <div class="text-center">
+                <button class="btn, btn-sm" data-target="#wildDiscus" data-toggle="modal">Read More...</button>
+                </div>
+    
+                <div class="modal fade" data-keyboard="false" data-backdrop="static" id="wildDiscus" tabindex="-1">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button class="close" data-dismiss="modal">&times;</button>
+                                <h2 class="modal-title" style="text-align:center;">Wild Discus</h2>
+                            </div>
+                            <div class="modal-body">
+                                <p>
+                                    The beautifully coloured varieties of Discus that we have grown to love are a result of highly selective breeding.
+                                    Wild Discus Fish however are typically brown with turquoise stripes on their fins,
+                                    amber coloured eyes dark vertical bars across their bodies.
+                                    There are 4 variations of the wild Discus fish that are the forefathers
+                                    of all tank bred species which have been selectively bred to enhance their colours,
+                                    shape and temperament usually with vivid red eyes and all manner of pattens.
+                                    <br />
+                                    <br />
+
+                                    Found in the Amazon river and its subsidiary’s the wild discus does have some distinctions.
+                                    The Royal Blue Discus which unlike the typical Wild brown discus have far more colour
+                                    over their entire bodies instead of being limited to just the outer edges.
+                                    <img class=" img-responsive" style="height:200px; margin: 0 auto;" src="../Images/w1.jpg" />
+
+                                    <br />
+                                    Wild Discus caught in the Rio Tefe are green in colourWild Green Discus
+                                    Fish they can be found in the wild with an almost solid coloured green
+                                    on the posterior half of the body. Red spots on a green discus can also indicate
+                                    a provenance from the Tefe region.
+                                    Wild caught green Discus are typically weakly marked but when found fully striped,
+                                    they are considered as Royal Green Discus.
+                                    <img class=" img-responsive" style="height:200px; margin: 0 auto;" src="../Images/w2.jpg" />
+
+                                    <br />
+                                    The Heckel Discus are found in the Rio Negro.
+                                    These particularly lively discus fish and are typically more demanding
+                                    to keep in an aquarium due to being used to a black water with an acidity of about pH 4.0.
+                                    Very rarely found in the wild with red eye colouration the Heckel Discus
+                                    have amber coloured eyes and a heavier vertical central stripe.
+                                    <img class=" img-responsive" style="height:200px; margin: 0 auto;" src="../Images/w3.jpg" />
+
+                                    <br />
+
+                                    Symphysodon Discus are found in the Rio Abacaxis and are considered the most desirable of Discus fish
+                                    due to their intense red colouration and blue head.
+                                    These Wild Discus fish are responsible for the larger portion of the new tank breeds.
+
+                                    <img class=" img-responsive" style="height:200px; margin: 0 auto;" src="../Images/w4.jpg" />
+                                    <br />
+                                    Wild Discus is uncommon in the hobby however there are people keeping them in their aquarium successfully.
+                                    You need to be experienced Discus keeper to have success with wild Discus
+                                    as they will require certain water parameter (PH level) and treatments (for parasite/worm).
+                                    However, if you can provide those requirements, they are no different than regular Discus.
+
+
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn" data-dismiss="modal">Close</button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+  
+
+
+
+
+</div>
+
+
+
